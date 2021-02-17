@@ -1,72 +1,60 @@
 * {
-
     box-sizing: border-box;
-    }
-    html{
-        margin: 0px;
+}
+
+html {
+    margin: 0px;
     padding: 0px;
-    
-    }
-    body
-    {
-        display: table;
-        width: auto;
-        height: auto;
-        margin: 0 auto;
-        padding: 1%;
-        
-    }
-    div {
-    
-        display: block;
-        margin: 0 auto;
-        background-color: #D8D8D8;
-       
-    }
-    
-    
-    
-    p{
-        
-    
-        height: 100%;
-        
-        text-align: center;
-    
-    }
-    
-    .width-480{
-        width: 480px;
-    
-    }
-    
-    .width-240{
-        width: 240px;
-        
-    
-    }
-    
-    
-    .height-75{
-      height:75px;
-      padding: 25px;
-    }
-    
-    .height-150{
-        height: 150px;
-        padding: 63px;
-    }
-    .height-125{
-        height: 125px;
-        padding: 50px;
-    }
-    .height-250{
-    
-        height: 250px;
-        padding: 113px;
-    }
-    
-    .height-80{
-        height: 240px;
-        padding: 108px;
-    }
+    display: table;
+    margin: 0 auto;
+}
+
+body {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+div {
+    display: block;
+    margin: 0 auto;
+    background-color: #D8D8D8;
+}
+
+p {
+    height: 100%;
+    text-align: center;
+}
+
+.width-480 {
+    width: 480px;
+}
+
+.width-240 {
+    width: 240px;
+}
+
+.height-75 {
+    height: 75px;
+    padding: 25px;
+}
+
+.height-150 {
+    height: 150px;
+    padding: 63px;
+}
+
+.height-125 {
+    height: 125px;
+    padding: 50px;
+}
+
+.height-250 {
+    height: 250px;
+    padding: 113px;
+}
+
+.height-80 {
+    height: 240px;
+    padding: 108px;
+}
