@@ -1,161 +1,190 @@
+body {
+    /*
+    border-top: solid 1px rgb(151, 151, 151);
+    border-left: solid 1px rgb(151, 151, 151);
+    border-right: solid 1px rgb(151, 151, 151);
+    border-bottom: solid 1px rgb(151, 151, 151);
+    border: solid 1px rgb(151, 151, 151); */
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "c c" "d d" "e f" "g h";
+    align-items: center;
+}
+
+div {
+    width: 100%;
+    width: 480px;
+    background-color: #D8D8D8;
+}
+
 .a {
-    border: solid 1px rgb(151, 151, 151);
-    ;
+    height: 75px;
+    padding: 25px;
+    border-top: solid 1px rgb(151, 151, 151);
+    border-left: solid 1px rgb(151, 151, 151);
+    border-right: solid 1px rgb(151, 151, 151);
+    border-bottom: solid 1px rgb(151, 151, 151);
 }
 
 .b {
+    height: 150px;
+    padding: 65px;
     border-left: solid 1px rgb(151, 151, 151);
-    ;
     border-right: solid 1px rgb(151, 151, 151);
-    ;
+    border-bottom: solid 1px rgb(151, 151, 151);
+}
+
+.c, .d {
+    height: 125px;
+    padding: 52.5px;
+    border-left: solid 1px rgb(151, 151, 151);
+    border-right: solid 1px rgb(151, 151, 151);
+    border-bottom: solid 1px rgb(151, 151, 151);
 }
 
 .c {
-    border: solid 1px rgb(151, 151, 151);
+    grid-area: c;
 }
 
 .d {
+    grid-area: d;
+}
+
+.e, .f, .g, .h {
+    height: 250px;
+    padding: 115px;
+    width: 100%;
     border-left: solid 1px rgb(151, 151, 151);
-    border-right: solid 1px rgb(151, 151, 151);
+    border-bottom: solid 1px rgb(151, 151, 151);
 }
 
 .e {
-    float: left;
-    border: none;
-    border-top: solid 1px rgb(151, 151, 151);
-    border-left: solid 1px rgb(151, 151, 151);
-    border-right: solid 1px rgb(151, 151, 151);
-    border-bottom: solid 1px rgb(151, 151, 151);
+    grid-area: e;
 }
 
 .f {
-    float: left;
-    border-top: solid 1px rgb(151, 151, 151);
+    grid-area: f;
+}
+
+.g {
+    grid-area: g;
+}
+
+.h {
+    grid-area: h;
+}
+
+.i {
+    height: 80px;
+    padding: 30px;
+    border-left: solid 1px rgb(151, 151, 151);
     border-right: solid 1px rgb(151, 151, 151);
     border-bottom: solid 1px rgb(151, 151, 151);
 }
 
-.g {
-    float: left;
-    border: none;
-    border-left: solid 1px rgb(151, 151, 151);
-    border-right: solid 1px rgb(151, 151, 151);
-}
-
-.h {
-    float: left;
-    border-right: solid 1px rgb(151, 151, 151);
-}
-
-.i {
-    border: solid 1px rgb(151, 151, 151);
-}
-
-.div-container {
-    display: table;
-    padding: 0;
-    margin: 0;
-}
-
-@media (min-width: 768px) {
-    .a {
-        width: 960px;
-        height: 100px;
-        padding: 40px;
-    }
-    .b {
-        float: left;
-        width: 200px;
-        height: 600px;
+@media (min-width:768px) and (max-width:960px) {
+    body {
+        height: 100%;
+        width: 100%;
+        /*
+        border-top: solid 1px rgb(151, 151, 151);
         border-left: solid 1px rgb(151, 151, 151);
         border-right: solid 1px rgb(151, 151, 151);
         border-bottom: solid 1px rgb(151, 151, 151);
-        padding-top: 290px;
+        border: solid 1px rgb(151, 151, 151); */
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        width: 100%;
+        grid-template-areas: " header header header " "aside main main" "aside footer footer";
+        overflow: hidden;
+    }
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: "c c d d" "e f g h";
+    }
+    aside {
+        grid-area: aside;
+    }
+    footer {
+        grid-area: footer;
+    }
+    div {
+        background-color: #D8D8D8;
+    }
+    .a {
+        height: 100px;
+        width: 960px;
+        padding: 40px;
+        border: none;
+        border-top: solid 1px rgb(151, 151, 151);
+        border-left: solid 1px rgb(151, 151, 151);
+        border-right: solid 1px rgb(151, 151, 151);
+        border-bottom: solid 1px rgb(151, 151, 151);
+    }
+    .b {
+        height: 600px;
+        width: 200px;
+        padding: 290px 0;
+        border: none;
+        border-left: solid 1px rgb(151, 151, 151);
+        border-right: solid 1px rgb(151, 151, 151);
+        border-bottom: solid 1px rgb(151, 151, 151);
+    }
+    .c, .d {
+        height: 200px;
+        width: 380px;
+        padding: 90px;
+        border: none;
+        border-right: solid 1px rgb(151, 151, 151);
+        border-bottom: solid 1px rgb(151, 151, 151);
     }
     .c {
-        float: left;
-        width: 380px;
-        height: 200px;
-        border-top: none;
-        border-left: none;
-        border-right: solid 1px rgb(151, 151, 151);
-        border-bottom: solid 1px rgb(151, 151, 151);
-        padding-top: 85px;
+        grid-area: c;
     }
     .d {
-        float: left;
-        width: 380px;
-        height: 200px;
-        border-top: none;
-        border-left: none;
+        grid-area: d;
+    }
+    .e, .f, .g, .h {
+        height: 250px;
+        width: 190px;
+        padding: 115px 0;
+        width: 100%;
         border-right: solid 1px rgb(151, 151, 151);
         border-bottom: solid 1px rgb(151, 151, 151);
-        padding-top: 85px;
     }
     .e {
-        float: left;
-        width: 190px;
-        height: 250px;
-        padding: 0;
-        border-top: none;
-        border-left: none;
-        border-right: solid 1px rgb(151, 151, 151);
-        border-bottom: solid 1px rgb(151, 151, 151);
-        padding-top: 113px;
+        grid-area: e;
     }
     .f {
-        float: left;
-        width: 190px;
-        height: 250px;
-        padding: 0;
-        border-top: none;
-        border-left: none;
-        border-right: solid 1px rgb(151, 151, 151);
-        border-bottom: solid 1px rgb(151, 151, 151);
-        padding-top: 113px;
+        grid-area: f;
     }
     .g {
-        float: left;
-        width: 190px;
-        height: 250px;
-        padding: 0;
-        border-top: none;
-        border-left: none;
-        border-right: solid 1px rgb(151, 151, 151);
-        border-bottom: solid 1px rgb(151, 151, 151);
-        padding-top: 113px;
+        grid-area: g;
     }
     .h {
-        float: left;
-        width: 190px;
-        height: 250px;
-        padding: 0;
-        border-bottom: solid 1px rgb(151, 151, 151);
-        padding-top: 113px;
+        grid-area: h;
     }
     .i {
-        float: left;
-        width: 760px;
         height: 150px;
-        padding: 0%;
-        border-top: none;
-        border-left: none;
+        width: 760px;
+        padding: 30px;
+        border: none;
         border-right: solid 1px rgb(151, 151, 151);
         border-bottom: solid 1px rgb(151, 151, 151);
-        padding-top: 65px;
     }
-    .div-container {
-        float: left;
-    }
-    .div-container1 {
-        float: left;
-        padding: 0;
-        margin: 0;
-    }
-    .main-container {
-        width: 960px;
-    }
-
 }
 
-
+@media (min-width:961px) {}
